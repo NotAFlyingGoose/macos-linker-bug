@@ -18,13 +18,13 @@ cargo run
 
 This will generate the object file.
 
-The program can also run the `ld` commands itself,
+The program can also run `ld` itself. To run it with `-ld-new`,
 
 ```shell
 cargo run -- with_bug
 ```
 
-or,
+or with `-ld-classic`,
 
 ```shell
 cargo run -- without_bug
