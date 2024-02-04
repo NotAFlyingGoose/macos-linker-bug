@@ -18,7 +18,7 @@ cargo run
 
 This will generate the object file.
 
-The given program can also run the ld commands itself,
+The program can also run the `ld` commands itself,
 
 ```shell
 cargo run -- with_bug
@@ -30,7 +30,7 @@ or,
 cargo run -- without_bug
 ```
 
-Here is the exact ld command that produces the bug,
+Here is the exact `ld` command that produces the bug,
 
 ```shell
 ld -platform_version macos 14.2 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -lSystem -ld_new -o my_awesome_program  my_awesome_program.o
